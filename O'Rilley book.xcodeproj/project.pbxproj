@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		849DD4BC22208B05004D7307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4BB22208B05004D7307 /* AppDelegate.swift */; };
 		849DD4BE22208B05004D7307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4BD22208B05004D7307 /* ViewController.swift */; };
-		849DD4C122208B05004D7307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849DD4BF22208B05004D7307 /* Main.storyboard */; };
 		849DD4C322208B07004D7307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849DD4C222208B07004D7307 /* Assets.xcassets */; };
 		849DD4C622208B07004D7307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849DD4C422208B07004D7307 /* LaunchScreen.storyboard */; };
+		849DD4CE22208B26004D7307 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4CD22208B26004D7307 /* main.swift */; };
+		849DD4D022208BAC004D7307 /* MyApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4CF22208BAC004D7307 /* MyApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		849DD4B822208B05004D7307 /* O'Rilley book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "O'Rilley book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849DD4BB22208B05004D7307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849DD4BD22208B05004D7307 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		849DD4C022208B05004D7307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		849DD4C222208B07004D7307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849DD4C522208B07004D7307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849DD4C722208B07004D7307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849DD4CD22208B26004D7307 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		849DD4CF22208BAC004D7307 /* MyApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +56,13 @@
 		849DD4BA22208B05004D7307 /* O'Rilley book */ = {
 			isa = PBXGroup;
 			children = (
+				849DD4CF22208BAC004D7307 /* MyApplication.swift */,
 				849DD4BB22208B05004D7307 /* AppDelegate.swift */,
 				849DD4BD22208B05004D7307 /* ViewController.swift */,
-				849DD4BF22208B05004D7307 /* Main.storyboard */,
 				849DD4C222208B07004D7307 /* Assets.xcassets */,
-				849DD4C422208B07004D7307 /* LaunchScreen.storyboard */,
 				849DD4C722208B07004D7307 /* Info.plist */,
+				849DD4CD22208B26004D7307 /* main.swift */,
+				849DD4C422208B07004D7307 /* LaunchScreen.storyboard */,
 			);
 			path = "O'Rilley book";
 			sourceTree = "<group>";
@@ -124,7 +127,6 @@
 			files = (
 				849DD4C622208B07004D7307 /* LaunchScreen.storyboard in Resources */,
 				849DD4C322208B07004D7307 /* Assets.xcassets in Resources */,
-				849DD4C122208B05004D7307 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +137,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849DD4D022208BAC004D7307 /* MyApplication.swift in Sources */,
 				849DD4BE22208B05004D7307 /* ViewController.swift in Sources */,
 				849DD4BC22208B05004D7307 /* AppDelegate.swift in Sources */,
+				849DD4CE22208B26004D7307 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		849DD4BF22208B05004D7307 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				849DD4C022208B05004D7307 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		849DD4C422208B07004D7307 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

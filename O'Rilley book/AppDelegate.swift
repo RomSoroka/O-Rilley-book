@@ -8,14 +8,27 @@
 
 import UIKit
 
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let vc1 = ViewController()
+        vc1.view.backgroundColor = .green
+        vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+        let vc2 = UIViewController()
+        vc2.view.backgroundColor = .yellow
+        vc2.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
+        let tabBarVC = UITabBarController()
+        tabBarVC.viewControllers = [vc1, vc2]
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        window.rootViewController = tabBarVC
+        window.makeKeyAndVisible()
+        
         return true
     }
 
